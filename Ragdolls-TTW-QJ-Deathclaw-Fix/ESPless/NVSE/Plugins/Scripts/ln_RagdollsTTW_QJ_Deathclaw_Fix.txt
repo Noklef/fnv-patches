@@ -1,0 +1,9 @@
+; replacer for the ESP, set the body part data to the specific HEX
+ref rBPTD
+set rBPTD to GetFormFromMod "RagdollsTTW.esm" "022E5C"
+
+if rBPTD
+	SetBodyPartData "001607B5" rBPTD ; Deathclaw 1
+	SetBodyPartData "001607B6" rBPTD ; Deathclaw 2
+	SetBodyPartData "001607B7" rBPTD ; Deathclaw 2
+endif
